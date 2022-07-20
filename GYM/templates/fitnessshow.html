@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h3>Classes:</h3>
+<ul>
+    <table border="2px solid">
+        {% for i in data %}
+        <tr>
+            <td>{{i[0]}}</td>
+            <td>{{i[1]}}</td>
+            <td>{{i[2]}}</td>
+            <td>{{i[3]}}</td>
+            <td>{{i[4]}}</td>
+            
+        </tr>
+    
+        {% endfor %}
+    </table>
+    
+</ul> 
+{% endblock content %}
+© 2022 GitHub, Inc.
+Terms
+Privacy

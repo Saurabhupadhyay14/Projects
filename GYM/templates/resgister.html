@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+li a:hover {
+  background-color: #111;
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="/">Home</a></li>
+  <li><a href="loginlink">login</a></li>
+</ul>
+<body background="/static/image.jpg" style="background-repeat: no-repeat; background-size: cover;background-position: center; background-attachment: fixed;">
+
+    <div> 
+        <fieldset>
+        <form action="/savelink" method="post">  
+                Enter Name:
+                <input type="text" name="name" required><br><br><br><br>
+                Enter Email:
+                <input type="text" name="email" required><br><br><br><br>
+                Enter Age:
+                <input type="text" name="age" required><br><br><br><br>
+                Enter City:
+                <input type="text" name="city" required><br><br><br><br>
+                Enter Number:
+                <input type="number" name="number" required><br><br><br><br>
+                Enter Password:
+                <input type="password" name="password" required><br><br><br><br>
+                
+            
+                <button type="submit">submit</button>
+                
+               <p> already have an account <a href="loginlink">login</a></p>
+        </form>
+        </fieldset>
+        
+        </div>
+</body>
+</html>
+
+

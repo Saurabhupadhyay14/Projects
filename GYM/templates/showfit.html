@@ -1,0 +1,39 @@
+
+<html>
+  <h1>
+      Welcome To Dispaly Page"
+  </h1>
+
+  <style>
+body{
+
+  background-image: url(../static/background2.png);
+  float:center
+}
+
+  </style>
+
+
+
+<body>
+<br>
+
+<table border="2px solid">
+  {% for i in data %}
+  <tr>
+      <td>{{i[0]}}</td>
+      <td>{{i[1]}}</td>
+      <td>{{i[2]}}</td>
+      <td>{{i[3]}}</td>
+      <td>{{i[4]}}</td>
+      <td> <a href="/editlink/{{i[0]}}">edit</a>
+          <a href="/deletelink/{{i[0]}}">delete</a>
+      </td>
+  </tr>
+
+  {% endfor %}
+</table>
+
+
+  </body>
+</html>

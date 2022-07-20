@@ -1,0 +1,15 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
+<p>List bookings page</p>
+
+{% for booking in bookings  %}
+
+<a href="{{booking.id}}">{{booking.member.first_name}} {{booking.gym_class.class_name}}</a>
+    
+{% endfor %}
+
+<a href="/bookings/new">New booking</a>
+
+{% endblock %}

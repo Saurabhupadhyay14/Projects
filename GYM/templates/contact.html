@@ -1,0 +1,70 @@
+<html>
+<head>
+<style>
+  body{
+    background-color: url(../Static/hamburger.jpg) no-repeat;
+    background-size: cover;
+  }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+h1 {text-align: left;}
+p {text-align: left;}
+div {text-align: left;}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="/">Home</a></li>
+  <li><a href="loginlink">login</a></li>
+</ul>
+<body background="/static/image.jpg" style="background-repeat: no-repeat; background-size: cover;background-position: center; background-attachment: fixed;">
+
+
+<h3>Contact Form</h3>
+
+<fieldset>
+    <form action="/savelink16" method="post">  
+            Enter Name:
+            <input type="text" name="fname" required><br><br><br><br>
+            Enter Last:
+            <input type="text" name="lname" required><br><br><br><br>
+            Enter Subject:
+            <input type="subject" name="subject" required style="height:200px"><br><br><br><br>
+            <button type="submit">submit</button>
+
+    </form>
+</fieldset>
+        
+    
+</body>
+</html>

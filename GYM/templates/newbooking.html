@@ -1,0 +1,34 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
+<p>New booking page</p>
+
+<form action="/bookings" method="post">
+
+    <label for="gym_class_id">Class:</label>
+    <select name="gym_class_id" id="gym_class_id" required="required">
+        {% for gym_class in gym_classes %}
+            <option value="{{gym_class.id}}">{{gym_class.class_name}}</option>
+        {% endfor %}
+    </select>
+
+    <label for="member_id">Member:</label>
+    <select name="member_id" id="member_id" required="required">
+        {% for member in members %}
+            <option value="{{member.id}}">{{member.first_name}}</option>
+        {% endfor %}
+    </select>
+
+    <p>Has member attended class?</p>
+    <label for="true">Yes</label>
+    <input type="radio" id="true" name="attended" value="True" required="required">
+    <label for="false">No</label>
+    <input type="radio" id="false" name="attended" value="False" required="required" checked="checked">
+
+    <button type="submit">Book</button>
+
+</form>
+    
+{% endblock %}
+
